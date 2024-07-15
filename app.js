@@ -11,8 +11,9 @@ const todoRouter = require('./routes/todo.routes');
 
 
 const app = express()
-app.use(cors())
+
 app.use(express.json());
+app.use(cors())
 app.use('/user',userRouter);
 app.use('/todo',todoRouter);
 
